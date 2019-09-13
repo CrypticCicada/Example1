@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SquareNumbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int iNumber1;
+            Console.Write("Input: ");
+            iNumber1 =  int.Parse(Console.ReadLine());
+            int iResult = Multiply(iNumber1, iNumber1);
+            
+            
+            Console.WriteLine("Output: {0}", iResult);
+            Console.ReadLine();
+        }
+
+        static int Multiply(int iNumber1, int iNumber2)
+        {
+            int answer;
+            
+            answer = iNumber1 * iNumber2;
+            return answer;
+        }
+    }
+}
